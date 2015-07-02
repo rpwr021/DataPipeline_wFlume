@@ -2,7 +2,7 @@ import org.apache.log4j.Logger;
 
 public class logGen{
 
-        final static Logger logger = Logger.getLogger(logExample.class);
+        final static Logger logger = Logger.getLogger(logGen.class);
 
         public static void main(String[] args) {
 
