@@ -12,6 +12,6 @@ dkrurl=`sudo docker inspect -f  '{{json .}}' dfc | jshon  -e NetworkSettings -e 
 if wget $dkrurl ; then
 	rm -f index.html
 	java logGen $1
+else 
+	echo "docker container isn't up ? "
 fi
-
-
