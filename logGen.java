@@ -1,5 +1,7 @@
 import org.apache.log4j.Logger;
 
+//simple class to generate dummy log events using log4j framework 
+
 public class logGen{
 
         final static Logger logger = Logger.getLogger(logGen.class);
@@ -16,17 +18,17 @@ public class logGen{
         private void runMe(String parameter){
 
                 if(logger.isDebugEnabled()){
-                        logger.debug("This is debug : " + parameter);
+                        logger.debug("Message level - debug : " + parameter);
                 }
 
                 if(logger.isInfoEnabled()){
-                        logger.info("This is info : " + parameter);
+                        logger.info("Message level - info : " + parameter);
                 }
 
-                 logger.warn("This is warn  : " + parameter);
-                logger.error("This is error : " + parameter);
-                logger.fatal("This is fatal : " + parameter);
-
+                 logger.warn("Message level - warn  : " + parameter);
+                logger.error("Message level - error : " + parameter);
+                logger.fatal("Message level - fatal : " + parameter);
+ 
         }
 
 }
